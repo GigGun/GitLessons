@@ -17,7 +17,7 @@ def quicksort(items, first, last):
             quicksort(items, i, last)
 
 
-items = [rnd.randint(1, 10) for _ in range(10)]
+items = [rnd.randint(1, 20) for _ in range(20)]
 print(items)
 quicksort(items, 0, len(items) - 1)
 print(items)
