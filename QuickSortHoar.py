@@ -1,7 +1,4 @@
 # Быстрая сортировка Хоара
-import random as rnd
-
-
 def quicksort(items, first, last):
     if first >= last: return
 
@@ -15,9 +12,3 @@ def quicksort(items, first, last):
             i, j = i + 1, j - 1
             quicksort(items, first, j)
             quicksort(items, i, last)
-
-
-items = [rnd.randint(1, 20) for _ in range(20)]
-print(items)
-quicksort(items, 0, len(items) - 1)
-print(items)
