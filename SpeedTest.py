@@ -9,4 +9,5 @@ start = datetime.now()
 QuickSortHoar.quicksort(items, 0, len(items) - 1)
 end = datetime.now()
 print(items)
-print(end - start)
+delta = end - start
+print(delta.seconds * 1000000 + delta.microseconds)
