@@ -5,4 +5,3 @@ def qsort(items):
                [x for x in items if x == items[0]] + \
                qsort([x for x in items if x > items[0]])
     return []
-print('End')
